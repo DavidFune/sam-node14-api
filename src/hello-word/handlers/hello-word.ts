@@ -10,7 +10,7 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
  *
  */
 
-export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
     let response: APIGatewayProxyResult;
     try {
         response = {
@@ -31,3 +31,6 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
 
     return response;
 };
+
+export default lambdaHandler;
+

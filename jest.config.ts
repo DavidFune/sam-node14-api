@@ -1,15 +1,7 @@
-/*
- * For a detailed explanation regarding each configuration property and type check, visit:
- * https://jestjs.io/docs/configuration
- */
-
-export default {
+module.exports = {
+    roots: ['src'],
+    testMatch: ['**/__tests__/**/*.+(ts|tsx|js)'],
     transform: {
-        '^.+\\.ts?$': 'esbuild-jest',
-    },
-    clearMocks: true,
-    collectCoverage: true,
-    coverageDirectory: 'coverage',
-    coverageProvider: 'v8',
-    testMatch: ['**/tests/unit/*.test.ts'],
+        '^.+\\.(ts|tsx)$': 'ts-jest'
+    }
 };

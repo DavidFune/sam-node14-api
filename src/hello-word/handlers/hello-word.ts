@@ -31,3 +31,4 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
 
     return response;
 };
+
